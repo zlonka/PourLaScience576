@@ -1,7 +1,7 @@
-<p><b>Find the maximum number of power-of-2 2-sums in a N-length set of signed integers</b></p>
-<pre>
+<p><b>Find the maximum number of power-of-2 2-sums in a N-length set of signed integers</b><br/>
 Ex: for N=5, {-3,-1,3,5,11} has 6 2-sums thar are power of 2 :  -3+5=2 -3+11=8 -1+3=2 -1+5=4 3+5=8 5+11=16
-
+</p>
+<pre>
 Best known solutions: https://oeis.org/A352178/a352178_5.txt
 Better (smaller) intervals where found with this code than published solutions.
 

@@ -5,7 +5,7 @@ Ex: for N=5, {-3,-1,3,5,11} has 6 2-sums thar are power of 2 :  -3+5=2 -3+11=8 -
 Best known solutions: https://oeis.org/A352178/a352178_5.txt<br/>
 Better (smaller) intervals where found with this code than published solutions.<br/>
 <br/>
-See Pour la Science #576 (9/2025) paper "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.<br/>
+See Pour la Science #576 (9/2025) paper <a href="https://www.pourlascience.fr/sr/logique-calcul/des-graphes-au-secours-du-denombrement-28190.php">"Des graphes au secours des nombres"</a> from Jean-Paul Delahaye for details.<br/>
   <br/>
 A "fast" mode give the maximum instantly for even N with N <= 52, and a near-maximum value with N > 52.<br/>
 Usage: pls.exe N [fast | vmin [vmax]]<br/>

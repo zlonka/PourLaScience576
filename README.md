@@ -10,7 +10,7 @@ A "fast" mode give the maximum instantly for even N  with N <= 52, and a near-ma
 Usage: pls.exe N [fast | vmin [vmax]]
 Ex: pls.exe 17 5 19 will search 17 length set with values from [-5, 5] to [-19, 19]
 Ex: pls.exe 20 fast will search 20 length set with "fast" method (may not find the best solution for N > 52)
-Compiled on Visual Studio, with /O2 /Ot. For N > 1024 change <span style='color:#0a0'>#define NMAX 1024</span> line and recompile.
+Compiled on Visual Studio, with /O2 /Ot. For N > 1024 change <i style='color:#0a0'>#define NMAX 1024</i> line and recompile.
 // 5 --- nb pow2 = 6 : {-3,-1,3,5,11}  -3+5=2 -3+11=8 -1+3=2 -1+5=4 3+5=8 5+11=16
 // 6 NEW nb pow2 = 7 : {-3,-1,1,3,5,7}  -3+5=2 -3+7=4 -1+3=2 -1+5=4 1+3=4 1+7=8 3+5=8
 // 7 NEW nb pow2 = 9 : {-5,-3,-1,3,5,7,9}  -5+7=2 -5+9=4 -3+5=2 -3+7=4 -1+3=2 -1+5=4 -1+9=8 3+5=8 7+9=16

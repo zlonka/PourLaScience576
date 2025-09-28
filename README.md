@@ -1,10 +1,9 @@
-<pre>
-  Find the maximum number of power-of-2 2-sums in a N-length set of signed integers
+<pre><b>Find the maximum number of power-of-2 2-sums in a N-length set of signed integers</b>
 Ex: for N=5, {-3,-1,3,5,11} has 6 2-sums thar are power of 2 :  -3+5=2 -3+11=8 -1+3=2 -1+5=4 3+5=8 5+11=16
 Best known solutions: https://oeis.org/A352178/a352178_5.txt
 Better (smaller) intervals where found with this code than published solutions.
 
-See Pour la Science #576 (9/2025) article "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.
+See Pour la Science #576 (9/2025) paper "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.
   
 A "fast" mode give the maximum instantly for even N  with N <= 52, and a near-maximum value for N > 52.
 Usage: pls.exe N [fast | vmin [vmax]]

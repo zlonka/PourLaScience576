@@ -1,17 +1,18 @@
 <p><b>Find the maximum number of power-of-2 2-sums in a N-length set of signed integers</b><br/>
 Ex: for N=5, {-3,-1,3,5,11} has 6 2-sums thar are power of 2 :  -3+5=2 -3+11=8 -1+3=2 -1+5=4 3+5=8 5+11=16
 </p>
+<p>
+Best known solutions: https://oeis.org/A352178/a352178_5.txt<br/>
+Better (smaller) intervals where found with this code than published solutions.<br/>
+<br/>
+See Pour la Science #576 (9/2025) paper "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.<br/>
+  <br/>
+A "fast" mode give the maximum instantly for even N with N <= 52, and a near-maximum value with N > 52.<br/>
+Usage: pls.exe N [fast | vmin [vmax]]<br/>
+Ex: pls.exe 17 5 19 will search 17 length set with values from [-5, 5] to [-19, 19]<br/>
+Ex: pls.exe 20 fast will search 20 length set with "fast" method (may not find the best solution for N > 52)<br/>
+Compiled on Visual Studio, with /O2 /Ot. For N > 1024 change #define NMAX 1024 line and recompile.<br/>
 <pre>
-Best known solutions: https://oeis.org/A352178/a352178_5.txt
-Better (smaller) intervals where found with this code than published solutions.
-
-See Pour la Science #576 (9/2025) paper "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.
-  
-A "fast" mode give the maximum instantly for even N with N <= 52, and a near-maximum value with N > 52.
-Usage: pls.exe N [fast | vmin [vmax]]
-Ex: pls.exe 17 5 19 will search 17 length set with values from [-5, 5] to [-19, 19]
-Ex: pls.exe 20 fast will search 20 length set with "fast" method (may not find the best solution for N > 52)
-Compiled on Visual Studio, with /O2 /Ot. For N > 1024 change #define NMAX 1024 line and recompile.
 // 6 NEW nb pow2 = 7 : {-3,-1,1,3,5,7}  -3+5=2 -3+7=4 -1+3=2 -1+5=4 1+3=4 1+7=8 3+5=8
 // 7 NEW nb pow2 = 9 : {-5,-3,-1,3,5,7,9}  -5+7=2 -5+9=4 -3+5=2 -3+7=4 -1+3=2 -1+5=4 -1+9=8 3+5=8 7+9=16
 // 8 NEW nb pow2 = 11 : {-5,-3,-1,1,3,5,7,9}  -5+7=2 -5+9=4 -3+5=2 -3+7=4 -1+3=2 -1+5=4 -1+9=8 1+3=4 1+7=8 3+5=8 7+9=16

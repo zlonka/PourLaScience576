@@ -1,8 +1,11 @@
-Find the maximum number of power-of-2 2-sums in a N-length set of signed integers
+<pre>
+  Find the maximum number of power-of-2 2-sums in a N-length set of signed integers
 Ex: for N=5, {-3,-1,3,5,11} has 6 2-sums thar are power of 2 :  -3+5=2 -3+11=8 -1+3=2 -1+5=4 3+5=8 5+11=16
 Best known solutions: https://oeis.org/A352178/a352178_5.txt
 Better (smaller) intervals where found with this code than published solutions.
 
+See Pour la Science #576 (9/2025) article "Des graphes au secours des nombres" from Jean-Paul Delahaye for details.
+  
 A "fast" mode give the maximum instantly for even N  with N <= 52, and a near-maximum value for N > 52.
 Usage: pls.exe N [fast | vmin [vmax]]
 Ex: pls.exe 17 5 19 will search 17 length set with values from [-5, 5] to [-19, 19]
@@ -20,3 +23,4 @@ For N > 1024 change #define NMAX 1024 line and recompile.
 // 32 NEW nb pow2 = 71 : {-27,-25,-23,-21,-19,-17,-15,-13,-11,-9,-7,-5,-3,-1,1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35}  -27+29=2 -27+31=4 -27+35=8 -25+27=2 -25+29=4 -25+33=8 -23+25=2 -23+27=4 -23+31=8 -21+23=2 -21+25=4 -21+29=8 -19+21=2 -19+23=4 -19+27=8 -19+35=16 -17+19=2 -17+21=4 -17+25=8 -17+33=16 -15+17=2 -15+19=4 -15+23=8 -15+31=16 -13+15=2 -13+17=4 -13+21=8 -13+29=16 -11+13=2 -11+15=4 -11+19=8 -11+27=16 -9+11=2 -9+13=4 -9+17=8 -9+25=16 -7+9=2 -7+11=4 -7+15=8 -7+23=16 -5+7=2 -5+9=4 -5+13=8 -5+21=16 -3+5=2 -3+7=4 -3+11=8 -3+19=16 -3+35=32 -1+3=2 -1+5=4 -1+9=8 -1+17=16 -1+33=32 1+3=4 1+7=8 1+15=16 1+31=32 3+5=8 3+13=16 3+29=32 5+11=16 5+27=32 7+9=16 7+25=32 9+23=32 11+21=32 13+19=32 15+17=32 29+35=64 31+33=64
 // 100 : 295 (best is 297)
 // 1000 : 4503 (best is ?)
+</pre>
